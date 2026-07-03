@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Form</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>Student Registration Form</h1>
+
+<form id="myForm">
+
+<label>Full Name</label>
+<input
+type="text"
+id="name"
+placeholder="Enter your full name"
+required>
+
+<label>Email</label>
+<input
+type="email"
+id="email"
+placeholder="Enter your email"
+required>
+
+<label>Password</label>
+<input
+type="password"
+id="password"
+placeholder="Minimum 6 characters"
+minlength="6"
+required>
+
+<label>Phone Number</label>
+<input
+type="tel"
+id="phone"
+placeholder="10 digit number"
+pattern="[0-9]{10}"
+required>
+
+<label>Date of Birth</label>
+<input
+type="date"
+required>
+
+<label>Gender</label>
+
+<div class="gender">
+
+<label>
+<input
+type="radio"
+name="gender"
+required>
+Male
+</label>
+
+<label>
+<input
+type="radio"
+name="gender">
+Female
+</label>
+
+<label>
+<input
+type="radio"
+name="gender">
+Other
+</label>
+
+</div>
+
+<label>Course</label>
+
+<select required>
+
+<option value="">
+Select Course
+</option>
+
+<option>
+Computer Science
+</option>
+
+<option>
+Mechanical
+</option>
+
+<option>
+Civil
+</option>
+
+<option>
+Electrical
+</option>
+
+</select>
+
+<label>Skills</label>
+
+<div class="skills">
+
+<label>
+<input type="checkbox">
+HTML
+</label>
+
+<label>
+<input type="checkbox">
+CSS
+</label>
+
+<label>
+<input type="checkbox">
+JavaScript
+</label>
+
+<label>
+<input type="checkbox">
+React
+</label>
+
+</div>
+
+<label>Address</label>
+
+<textarea
+rows="4"
+placeholder="Enter your address">
+</textarea>
+
+<div class="buttons">
+
+<button
+type="submit"
+class="submit">
+Submit
+</button>
+
+<button
+type="reset"
+class="reset">
+Reset
+</button>
+
+</div>
+
+</form>
+
+<p id="message"></p>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
